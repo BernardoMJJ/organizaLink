@@ -1,23 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="assets/logo-bianca.jpeg" type="image/x-icon">
-    <title>Bianca Beautyy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=SAira:wght@800&display=swap">
+    <title>Bianca Beauty</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-family: 'Saira', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 0 0 1px transparent, 0 1px 2px rgb(0 0 0 / 50%);
+        }
+
+        body > img {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        section {
+            display: grid;
+            place-items: center;
+            position: absolute;
+            inset: 0;
+            overflow-y: scroll;
+        }
+
+        section > div {
+            padding: 100px 10px;  
+        }
+
+        section div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section div img {
+            width: 100px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            box-shadow: 0 0 8px 1px lightblue;
+        }
+
+        a {
+            display: flex;
+            background: white;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px solid white;
+            padding: 10px;
+            color: #0f172a;
+            text-decoration: none;
+            gap: 20px;
+            align-items: center;
+            border-radius: 4px;
+            transition-duration: 200ms;
+        }
+
+        a:hover {
+            
+        }
+        a i {
+            font-size: 1.3em;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <img src="/assets/logo-bianca.jpeg" alt="logo bianca beauty" id="logo">
-        <a href="https://www.instagram.com/mbianca_beautyy/" id="link-insta">@mbianca_beautyy</a>
-        <img src="assets/instagram.svg" alt="icone do instagram">
-    </header>
-    <div class="lista-servicos">
-        <ul class="list-group">
-            <li><img src="/assets/cosmetics.png" alt="icone de cosmeticos" id="icone-cosmetico"><a href="https://wa.me/558481349571">Agende seu horário - WhatsApp</a></li>
-        </ul>
-    </div>
+    <img src="/assets/bg-make.jpg" alt="background de makeup">
+    <section>
+        <div>
+            <img src="/assets/logo-bianca.jpeg" alt="logo bianca">
+            <h2>Bianca Beauty</h2>
+            <div>
+                <a href="https://wa.me/558481349571"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+                <a href="https://www.instagram.com/mbianca_beautyy/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
